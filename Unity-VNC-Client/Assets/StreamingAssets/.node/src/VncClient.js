@@ -1,6 +1,7 @@
 var rfb = require('node-rfb3.8');
 var vnc = new rfb();
 var png = require('node-image-to-buffer').png;
+var jpg = require('node-image-to-buffer').jpg;
 var msgpack = require('msgpack-js');
 var WebSocketServer = require('ws').Server;
 
@@ -25,7 +26,7 @@ server.on('connection', function(client) {
         var data = msgpack.decode(request);
         switch (data.mode) {
             case 'connect':
-                console.log(data);
+                //console.log(data);
                 vnc.connect(data.ip,data.port,data.password);
 
                 vnc.events.on('connected',function(data){
@@ -36,32 +37,45 @@ server.on('connection', function(client) {
                     vnc.info.pixel_format.depth = 8;
                     vnc.info.pixel_format.big_endian_flag = 0;
                     vnc.info.pixel_format.true_colour_flag =　1;
+                    //vnc.info.pixel_format.red_shift = 32;
+                    //vnc.info.pixel_format.green_shift = 8;
+                    //vnc.info.pixel_format.blue_shift = 0;
                     
                     vnc.SetPixelFormat();
                     vnc.SetEncodings();
-                    vnc.FramebufferUpdateRequest(1,0,0,vnc.info.width,vnc.info.height);
+                    //vnc.FramebufferUpdateRequest(1,0,0,vnc.info.width,vnc.info.height);
                     
                     var message = {
-                        mode : 'connected'
+                        mode : 'connected',
+                        name : vnc.info.name,
+                        width: vnc.info.width,
+                        height: vnc.info.height
                     }
                     sendTOunity(client,message);
                 });
                 
                 vnc.events.on('data',function(rect){
-                    var buf = png.ToBuffer(rect.width,rect.height,rect.data);
+                    //var buf = png.ToBuffer(rect.width,rect.height,rect.data);
+                    var buf = jpg.ToBuffer(rect.width,rect.height,50,rect.data);
                     var message = {
                         mode : 'rect',
                         width: rect.width,
                         heigth:rect.height,
                         data : buf
                     }
-                    console.log(count+":",buf);
+                    //console.log(count+":",buf);
                     count++;
                     sendTOunity(client,message);
                 });
                 break;
             case 'update':
                 vnc.FramebufferUpdateRequest(0,0,0,vnc.info.width,vnc.info.height);
+                break;
+            case 'pointer':
+                vnc.PointerEvent(data.mask,data.x,data.y);
+                break;
+            case 'key':
+                vnc.KeyEvent(data.on,data.code);
                 break;
             default:
                 console.log(data);
@@ -76,6 +90,7 @@ server.on('connection', function(client) {
     // 通信がクローズしたときの処理
     client.on('close', function(){
         console.log('close')
+        process.exit(1);
     });
  
     // エラーが発生した場合

@@ -2,6 +2,8 @@ var net = require('net');
 var EventEmitter = require('events').EventEmitter;
 var des = require('./lib/vnc_des-ecb.js');
 
+
+
 var rfb = function(){
     //ƒCƒxƒ“ƒg
     this.events = new EventEmitter();
@@ -267,26 +269,53 @@ rfb.prototype.FramebufferUpdateRequest = function(i,x,y,w,h){
 }
 
 rfb.prototype.KeyEvent = function(down,key){
-    var buf = new Buffer(8);
-    buf.writeUInt8(4,0);   //message-type
-    buf.writeUInt8(down,1);//down-flag  
-    buf.writeUInt16BE(0,3);//padding
-    buf.writeUInt32BE(0,4);//key
-    this.client.write(buf);
+    if (key > 0) {
+        var buf = new Buffer(8);
+        buf.writeUInt8(4,0);   //message-type
+        buf.writeUInt8(down,1);//down-flag  
+        buf.writeUInt16BE(0,3);//padding
+        buf.writeUInt32BE(key,4);//key
+        console.log(key+":",buf);
+        this.client.write(buf);
+    }
 }
 
 rfb.prototype.PointerEvent = function(mask,x,y){
     var buf = new Buffer(6);
     buf.writeUInt8(5,0);   //message-type
-    buf.writeUInt8(mask,1);//button-mask
-    buf.writeUInt16LE(x,2);//x-position
-    buf.writeUInt16LE(y,4);//y-position
+    
+    switch (mask) {
+        case 0:
+            buf.writeUInt8(1 << 0,1);
+            break;
+        case 1:
+            buf.writeUInt8(1 << 1,1);
+            break;
+        case 2:
+            buf.writeUInt8(1 << 2,1);
+            break;
+        case 3:
+            buf.writeUInt8(1 << 3,1);
+            break;
+        case 4:
+            buf.writeUInt8(1 << 4,1);
+            break;
+        case 5:
+            buf.writeUInt8(1 << 5,1);
+            break;
+        default:
+            buf.writeUInt8(0,1);
+            break;
+    }
+    
+    buf.writeUInt16BE(x,2);//x-position
+    buf.writeUInt16BE(y,4);//y-position
     console.log(buf);
     this.client.write(buf);
 }
 
 function ReceiveVncServerInfo(info,data) {
-    console.log('R'+data.length+':',data);
+    //console.log('R'+data.length+':',data);
     
     info.width  = data.slice(0,2).readUInt16BE(0);
     info.height = data.slice(2,4).readUInt16BE(0);

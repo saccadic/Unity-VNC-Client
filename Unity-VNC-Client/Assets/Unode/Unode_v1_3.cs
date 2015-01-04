@@ -182,6 +182,15 @@ public class Unode_v1_3 : MonoBehaviour {
 		};
 		send(ws,packed_data);		
 	}
+	public void RegistNodeModule(string name,string js){
+		packed_data = new Dictionary<string, object> {
+			{ "mode", "child" },
+			{ "regist", true},
+			{ "name", name},
+			{ "js", js}
+		};
+		send(ws,packed_data);		
+	}
 	
 	public void SendToNodeModule(WebSocket ws,string name,Dictionary<string,object> option){
 		var packed_data = new Dictionary<string, object> {
