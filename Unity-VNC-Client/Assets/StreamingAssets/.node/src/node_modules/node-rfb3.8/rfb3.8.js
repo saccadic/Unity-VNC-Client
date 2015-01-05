@@ -52,7 +52,8 @@ rfb.prototype.connect = function(ipadress,port_number,password){
         //console.log(data);
         switch (self.mode) {
             case 0://バージョンマッチング
-                if (data.toString() == 'RFB 003.008\n') {
+                console.log(data.toString());
+                if (data.toString() == 'RFB 003.008\n' || data.toString() == 'RFB 004.001\n') {
                     self.info.ver = 3.8;
                     self.mode = 1;
                     self.client.write('RFB 003.008\n');
@@ -176,9 +177,9 @@ rfb.prototype.connect = function(ipadress,port_number,password){
         //console.log(buf);
         self.rect.data = new Buffer(self.rect.width*self.rect.height*3);
         for(var i=0;i<self.rect.width*self.rect.height;i++){
-            self.rect.data[3*i  ] = buf[4*i  ];
+            self.rect.data[3*i  ] = buf[4*i+2];
             self.rect.data[3*i+1] = buf[4*i+1];
-            self.rect.data[3*i+2] = buf[4*i+2];
+            self.rect.data[3*i+2] = buf[4*i];
         }
         self.events.emit('data',self.rect);
     });

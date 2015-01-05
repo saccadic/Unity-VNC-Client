@@ -1,0 +1,26 @@
+{
+  "name": "node-rfb3.8",
+  "version": "1.0.0",
+  "description": "Vnc client for Node.js",
+  "main": "rfb3.8.js",
+  "dependencies": {
+    "node-image-to-buffer": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SavantCat/node-rfb3.8.git"
+  },
+  "keywords": [
+    "vnc"
+  ],
+  "author": "Katsuyoshi Hotta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SavantCat/node-rfb3.8/issues"
+  },
+  "homepage": "https://github.com/SavantCat/node-rfb3.8"
+}

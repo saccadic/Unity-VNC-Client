@@ -8,9 +8,11 @@ using MiniMessagePack;
 public class vncclient : MonoBehaviour {
 	public WebSocket ws;
 	public string ws_adress;
+	public int ws_port;
+	public string ws_path;
 
-	public string ip;
-	public string port;
+	public string vnc_ip;
+	public string vnc_port;
 	public string password;
 	private Unode_v1_3 unode;
 
@@ -21,7 +23,7 @@ public class vncclient : MonoBehaviour {
 	public Dictionary<string,object> vnc;
 	public Texture2D img;
 
-	private bool rect = false;
+	public bool rect = false;
 	public bool connected = false;
 	public float timer = 0;
 	public int updateFream = -1;
@@ -34,9 +36,18 @@ public class vncclient : MonoBehaviour {
 	private pointer point;
 	
 	void Awake() {
-		unode = GameObject.Find ("Unode_v1_3").GetComponent<Unode_v1_3>();
-		unode.RegistNodeModule(gameObject.name,"VncClient.js");
 
+	}
+	
+	void Start () {
+		unode = GameObject.Find ("Unode_v1_3").GetComponent<Unode_v1_3>();
+		ws_path = '/'+gameObject.name;
+		unode.RegistNodeModule(gameObject.name,"VncClient.js");
+		var option = new Dictionary<string, object> {
+			{ "port", ws_port },
+			{ "path", ws_path }
+		};
+		unode.SendToNodeModule(gameObject.name,option);
 		vnc = new Dictionary<string, object> {
 			{ "name", string.Empty },
 			{ "width", 0 },
@@ -44,14 +55,13 @@ public class vncclient : MonoBehaviour {
 		};
 		gameObject.AddComponent<pointer>();
 		point = gameObject.GetComponent<pointer>();
-	}
-	
-	void Start () {
+
+
 		ObjectName = gameObject.name;
 		tmp_pos = point.pos;
 
 
-		ws = new WebSocket(ws_adress);
+		ws = new WebSocket(ws_adress+":"+ws_port+ws_path);
 		ws.Connect ();
 
 		ws.OnOpen += (sender, e) => {
@@ -114,27 +124,11 @@ public class vncclient : MonoBehaviour {
 				gameObject.renderer.material.mainTexture = img;
 			}
 			if(updateFream == 1){
-				if (Input.GetMouseButtonDown (0)) {
-					PointerEvent(0);
-				}
-				if (Input.GetMouseButton (1)) {
-					PointerEvent(1);
-				}
-				if (Input.GetMouseButton (2)) {
-					PointerEvent(2);
-				}
-				if(Input.GetAxis("Mouse ScrollWheel") > 0){
-					PointerEvent(3);
-					PointerEvent(-1);
-				}
-				if(Input.GetAxis("Mouse ScrollWheel") < 0){
-					PointerEvent(4);
-					PointerEvent(-1);
-				}
+
 				if(Input.GetMouseButtonUp(0) || Input.GetMouseButtonUp(1) || Input.GetMouseButtonUp(2)){
 					PointerEvent(-1);
 				}
-				if(Input.anyKeyDown){
+				if(Input.anyKeyDown && (Input.GetMouseButtonUp(0) || Input.GetMouseButtonUp(1) || Input.GetMouseButtonUp(2)) == false){
 						KeyEvent(1);
 				}
 			}
@@ -147,6 +141,23 @@ public class vncclient : MonoBehaviour {
 				if(updateFream == 1){
 					Debug.Log("update");
 					updateRequest();
+					if (Input.GetMouseButton (0)) {
+						PointerEvent(0);
+					}
+					if (Input.GetMouseButton (1)) {
+						PointerEvent(1);
+					}
+					if (Input.GetMouseButton (2)) {
+						PointerEvent(2);
+					}
+					if(Input.GetAxis("Mouse ScrollWheel") > 0){
+						PointerEvent(3);
+						PointerEvent(-1);
+					}
+					if(Input.GetAxis("Mouse ScrollWheel") < 0){
+						PointerEvent(4);
+						PointerEvent(-1);
+					}
 					if((point.pos != tmp_pos) && !(Input.GetMouseButton(0) || Input.GetMouseButton(1) || Input.GetMouseButton(2))){
 						tmp_pos = point.pos;
 						PointerEvent(-1);
@@ -167,8 +178,8 @@ public class vncclient : MonoBehaviour {
 		if(connected == false){
 			var packed_data = new Dictionary<string, object> {
 				{ "mode", "connect" },
-				{ "ip", ip },
-				{ "port", port },
+				{ "ip", vnc_ip },
+				{ "port", vnc_port },
 				{ "password", password },
 			};
 			unode.send(ws,packed_data);
@@ -196,8 +207,8 @@ public class vncclient : MonoBehaviour {
 		var packed_data = new Dictionary<string, object> {
 			{ "mode", "pointer" },
 			{ "mask",  mask},
-			{ "x"   ,  Mathf.Clamp((int)point.pos.x,0,500) },
-			{ "y"   ,  Mathf.Clamp((int)point.pos.y,0,500) }
+			{ "x"   ,  Mathf.Clamp((int)point.pos.x,0,(int)(long)vnc["width"]) },
+			{ "y"   ,  Mathf.Clamp((int)point.pos.y,0,(int)(long)vnc["height"]) }
 		};
 		unode.send(ws,packed_data);
 	}
@@ -244,7 +255,18 @@ public class vncclient : MonoBehaviour {
 		if(Input.GetKeyDown(KeyCode.RightArrow)){
 			return "0xff98";
 		}
-
+		if(Input.GetKeyDown(KeyCode.Backslash)){
+			return "0x005c";
+		}
+		if(Input.GetKeyDown(KeyCode.Minus)){
+			return "0x002d";
+		}
+		if(Input.GetKeyDown(KeyCode.Underscore)){
+			return "0x00ad";
+		}
+		if(Input.GetKeyDown(KeyCode.Space)){
+			return "0xff80";
+		}
 		if (Input.GetKey (KeyCode.LeftShift)) { //大文字
 			if (Input.GetKeyDown (KeyCode.A)) {
 					return "0x0041";
@@ -404,6 +426,39 @@ public class vncclient : MonoBehaviour {
 				return "0x007a";
 			}
 		}
+
+		if (Input.GetKeyDown (KeyCode.Keypad0)) {
+			return "0xffb0";
+		}
+		if (Input.GetKeyDown (KeyCode.Keypad1)) {
+			return "0xffb1";
+		}
+		if (Input.GetKeyDown (KeyCode.Keypad2)) {
+			return "0xffb2";
+		}
+		if (Input.GetKeyDown (KeyCode.Keypad3)) {
+			return "0xffb3";
+		}
+		if (Input.GetKeyDown (KeyCode.Keypad4)) {
+			return "0xffb4";
+		}
+		if (Input.GetKeyDown (KeyCode.Keypad5)) {
+			return "0xffb5";
+		}
+		if (Input.GetKeyDown (KeyCode.Keypad6)) {
+			return "0xffb6";
+		}
+		if (Input.GetKeyDown (KeyCode.Keypad7)) {
+			return "0xffb7";
+		}
+		if (Input.GetKeyDown (KeyCode.Keypad8)) {
+			return "0xffb8";
+		}
+		if (Input.GetKeyDown (KeyCode.Keypad9)) {
+			return "0xffb9";
+		}
+
+
 		return string.Empty;
 
 	}

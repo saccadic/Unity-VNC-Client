@@ -1,0 +1,111 @@
+Initialize engine version: 4.6.1f1 (d1db7a1b5196)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [nvd3dumx.dll 9.18.13.4475]
+    Renderer: NVIDIA GeForce GTX 550 Ti
+    Vendor:   NVIDIA
+    VRAM:     977 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Begin MonoManager ReloadAssembly
+Platform assembly: G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\win\win_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\win\win_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\win\win_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\win\win_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\win\win_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\win\win_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\win\win_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\win\win_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\win\win_Data\Managed\websocket-sharp.dll (this message is harmless)
+Loading G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\win\win_Data\Managed\websocket-sharp.dll into Unity Child Domain
+- Completed reload, in  0.036 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1280x800 60Hz; virtual: 1280x800 at 0,0
+Platform assembly: G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\win\win_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\win\win_Data\Managed\System.dll (this message is harmless)
+Initialize engine version: 4.6.1f1 (d1db7a1b5196)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [nvd3dumx.dll 9.18.13.4475]
+    Renderer: NVIDIA GeForce GTX 550 Ti
+    Vendor:   NVIDIA
+    VRAM:     977 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+d3d: creation params: flags=44 swap=1 vsync=80000000 w=314 h=212 fmt=21 bbcount=1 dsformat=75 pflags=0
+d3d: failed to create device [device lost]
+D3D9 initialization failed
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 550 Ti (ID=0x1244)
+    Vendor:   NVIDIA
+    VRAM:     977 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\win\win_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\win\win_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\win\win_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\win\win_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\win\win_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\win\win_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\win\win_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\win\win_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\win\win_Data\Managed\websocket-sharp.dll (this message is harmless)
+Loading G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\win\win_Data\Managed\websocket-sharp.dll into Unity Child Domain
+- Completed reload, in  0.034 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+Platform assembly: G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\win\win_Data\Managed\Mono.Security.dll (this message is harmless)
+desktop: 1280x800 60Hz; virtual: 1280x800 at 0,0
+Platform assembly: G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\win\win_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\win\win_Data\Managed\System.dll (this message is harmless)
+v0.10.28
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Platform assembly: G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\win\win_Data\Managed\Mono.Security.dll (this message is harmless)
+v0.10.28
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+TextMesaage:Connected Node.js
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+TextMesaage:Connected Node.js
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+hit:vncclient2
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+OnClosed[Unode_v1_3]
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+OnClosed[vncclient2]
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+1/6/2015 12:08:47 AM|Fatal|WebSocket.processException|WebSocketSharp.WebSocketException: The header part of a frame cannot be read from the data source.
+                             at WebSocketSharp.WebSocketFrame+<>c__DisplayClass7.<ReadAsync>b__6 (System.Byte[] header) [0x00000] in <filename unknown>:0 
+                             at WebSocketSharp.Ext+<>c__DisplayClass6.<ReadBytesAsync>b__5 (IAsyncResult ar) [0x00000] in <filename unknown>:0 1/6/2015 12:08:47 AM|Fatal|WebSocket.processException|WebSocketSharp.WebSocketException: The header part of a frame cannot be read from the data source.
+                             at WebSocketSharp.WebSocketFrame+<>c__DisplayClass7.<ReadAsync>b__6 (System.Byte[] header) [0x00000] in <filename unknown>:0 
+                             at WebSocketSharp.Ext+<>c__DisplayClass6.<ReadBytesAsync>b__5 (IAsyncResult ar) [0x00000] in <filename unknown>:0 
+
+OnError[Unode_v1_3]An exception has occurred while receiving a message.
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+OnError[vncclient2]An exception has occurred while receiving a message.
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+OnClosed[Unode_v1_3]The header part of a frame cannot be read from the data source.
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+OnClosed[vncclient2]The header part of a frame cannot be read from the data source.
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+

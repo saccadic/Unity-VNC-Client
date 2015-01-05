@@ -166,14 +166,12 @@ public class Unode_v1_3 : MonoBehaviour {
 	}
 	
 	public void send(WebSocket ws,Dictionary<string,object> dic){
-		if(ws.IsAlive){
 			byte[] data = MessagePackEncode(dic);
 			//Debug.Log(sizeof(byte)*data.Length);
 			ws.Send(data);
-		}
 	}
 	
-	public void RegistNodeModule(WebSocket ws,string name,string js){
+	public void RegistNodeModule(WebSocket ws,string name,string js,Dictionary<string,object> dic){
 		packed_data = new Dictionary<string, object> {
 			{ "mode", "child" },
 			{ "regist", true},
@@ -187,7 +185,7 @@ public class Unode_v1_3 : MonoBehaviour {
 			{ "mode", "child" },
 			{ "regist", true},
 			{ "name", name},
-			{ "js", js}
+			{ "js", js},
 		};
 		send(ws,packed_data);		
 	}
@@ -200,7 +198,14 @@ public class Unode_v1_3 : MonoBehaviour {
 		};
 		send(ws,packed_data);		
 	}
-
+	public void SendToNodeModule(string name,Dictionary<string,object> option){
+		var packed_data = new Dictionary<string, object> {
+			{ "mode", "child" },
+			{ "name", name},
+			{ "options", option}
+		};
+		send(ws,packed_data);		
+	}
 	public void AddTransformObjct(GameObject obj){
 		
 	}
