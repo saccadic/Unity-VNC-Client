@@ -118,10 +118,12 @@ public class vncclient : MonoBehaviour {
 	void Update () {
 		if(connected){
 			if(rect){
-//				Debug.Log("Update");
+				//				Debug.Log("Update");
 				rect = false;
 				img = loadtexture( (byte[])Msgpack["data"], (long)Msgpack["width"], (long)Msgpack["heigth"]);
 				gameObject.renderer.material.mainTexture = img;
+				if(updateFream == 1)
+					updateRequest();
 			}
 			if(updateFream == 1){
 
@@ -138,9 +140,11 @@ public class vncclient : MonoBehaviour {
 	private IEnumerator Updatefream(){
 		while(true){
 			if(connected){
+
+
+
 				if(updateFream == 1){
-					Debug.Log("update");
-					updateRequest();
+					//Debug.Log("update");
 					if (Input.GetMouseButton (0)) {
 						PointerEvent(0);
 					}
@@ -158,10 +162,13 @@ public class vncclient : MonoBehaviour {
 						PointerEvent(4);
 						PointerEvent(-1);
 					}
+					if(!(Input.GetMouseButton(0) || Input.GetMouseButton(1) || Input.GetMouseButton(2)))
+						PointerEvent(-1);
+					/*
 					if((point.pos != tmp_pos) && !(Input.GetMouseButton(0) || Input.GetMouseButton(1) || Input.GetMouseButton(2))){
 						tmp_pos = point.pos;
 						PointerEvent(-1);
-					}
+					}*/
 				}
 			}
 			yield return new WaitForSeconds (interval);
@@ -215,6 +222,7 @@ public class vncclient : MonoBehaviour {
 
 	public void SetUpdateFream(){
 		updateFream *= -1;
+		updateRequest();
 	}
 
 	private Texture2D loadtexture(byte[] image,long width,long height){

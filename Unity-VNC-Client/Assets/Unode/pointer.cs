@@ -10,8 +10,12 @@ public class pointer : MonoBehaviour {
 	public Vector3 pos;
 
 	public float width=1,height=1;
-
+	
 	private vncclient vnc; 
+
+	void Awake() {
+		Screen.showCursor = true;	
+	}
 
 	void Update () {
 		ray = Camera.main.ScreenPointToRay(Input.mousePosition);

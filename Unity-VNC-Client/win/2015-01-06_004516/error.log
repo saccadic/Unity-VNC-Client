@@ -1,0 +1,91 @@
+Unity Player [version: Unity 4.6.1f1_d1db7a1b5196]
+
+OculusPlugin.dll caused an Access Violation (0xc0000005)
+  in module OculusPlugin.dll at 0033:e7e86380.
+
+Error occurred at 2015-01-06_004518.
+G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\win\win.exe, run by K.Hotta.
+24% memory in use.
+32714 MB physical memory [24549 MB free].
+75720 MB paging file [62775 MB free].
+8388608 MB user address space [8388321 MB free].
+Read from location 00000000 caused an access violation.
+
+Context:
+RDI:    0x0a4e7f70  RSI: 0x039b9b00  RAX:   0x00000000
+RBX:    0x0434d7e0  RCX: 0x00000000  RDX:   0x00000280
+RIP:    0xe7e86380  RBP: 0x001cef10  SegCs: 0x00000033
+EFlags: 0x00010206  RSP: 0x001cee48  SegSs: 0x0000002b
+R8:    0x001ce308  R9: 0x00000005  R10:   0x00000000
+R11:    0x00000246  R12: 0x001cf2d0  R13:   0x039a4d48
+R14:    0x001cf350  R15: 0x00000000
+
+Bytes at CS:EIP:
+48 8b 09 48 85 c9 74 0a 48 83 c1 e8 0f 85 7e 0c Module 1
+C:\Windows\system32\xinput1_3.dll
+Image Base: 0x00400000  Image Size: 0x0001e000
+File Size:  107368      File Time:  2007-04-04_185422
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR DirectX for WindowsR
+   FileDesc:   Microsoft Common Controller API
+   FileVer:    9.18.944.0
+   ProdVer:    9.18.944.0
+
+Module 2
+C:\Windows\system32\ksuser.dll
+Image Base: 0x75240000  Image Size: 0x00006000
+File Size:  5120        File Time:  2009-07-14_104114
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   User CSA Library
+   FileVer:    6.1.7600.16385
+   ProdVer:    6.1.7600.16385
+
+Module 3
+C:\Windows\system32\kernel32.dll
+Image Base: 0x77690000  Image Size: 0x0011f000
+File Size:  1163264     File Time:  2014-03-04_184402
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Windows NT ベース API クライアント DLL
+   FileVer:    6.1.7601.18409
+   ProdVer:    6.1.7601.18409
+
+Module 4
+C:\Windows\system32\USER32.dll
+Image Base: 0x777b0000  Image Size: 0x000fa000
+File Size:  1008128     File Time:  2010-11-21_122410
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   マルチユーザー Windows ユーザー API クライアント DLL
+   FileVer:    6.1.7601.17514
+   ProdVer:    6.1.7601.17514
+
+Module 5
+C:\Windows\SYSTEM32\ntdll.dll
+Image Base: 0x778b0000  Image Size: 0x001a9000
+File Size:  1732032     File Time:  2013-08-29_111636
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   NT レイヤー DLL
+   FileVer:    6.1.7601.18247
+   ProdVer:    6.1.7601.18247
+
+Module 6
+C:\Windows\system32\PSAPI.DLL
+Image Base: 0x77a70000  Image Size: 0x00007000
+File Size:  9216        File Time:  2009-07-14_104154
+Version:
+   Company:    Microsoft Corporation
+   Product:    MicrosoftR WindowsR Operating System
+   FileDesc:   Process Status Helper
+   FileVer:    6.1.7600.16385
+   ProdVer:    6.1.7600.16385
+
+
+== [end of error.log] ==

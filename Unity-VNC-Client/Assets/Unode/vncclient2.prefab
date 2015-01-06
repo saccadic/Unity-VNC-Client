@@ -172,7 +172,7 @@ MonoBehaviour:
   connected: 0
   timer: 0
   updateFream: -1
-  interval: .5
+  interval: .100000001
 --- !u!114 &11411108
 MonoBehaviour:
   m_ObjectHideFlags: 1

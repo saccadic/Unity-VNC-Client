@@ -57,8 +57,10 @@ process.on('message', function(message) {
                     });
                     
                     vnc.events.on('data',function(rect){                        
-                        //var buf = png.ToBuffer(rect.width,rect.height,rect.data);
-                        var buf = jpg.ToBuffer(rect.width,rect.height,70,rect.data);
+                        var buf = png.ToBuffer(rect.width,rect.height,rect.data);
+                        //vnc.FramebufferUpdateRequest(0,0,0,vnc.info.width,vnc.info.height);
+                        //var buf = jpg.ToBuffer(rect.width,rect.height,50,rect.data);
+                        //vnc.FramebufferUpdateRequest(0,0,0,vnc.info.width,vnc.info.height);
                         var message = {
                             mode : 'rect',
                             width: rect.width,
