@@ -579,7 +579,7 @@ MonoBehaviour:
   adress: ws://127.0.0.1:8080/
   IsNodeJS: 0
   program_name: node.exe
-  windowtype_hidden: 1
+  windowtype_hidden: 0
   x86: 0
   nodejs_path: 
   Script_path: 
@@ -636,7 +636,7 @@ MonoBehaviour:
   ws_adress: ws://127.0.0.1
   ws_port: 9090
   ws_path: 
-  vnc_ip: 192.168.56.101
+  vnc_ip: 192.168.1.11
   vnc_port: 5902
   password: savant
   img: {fileID: 0}
@@ -1230,6 +1230,14 @@ Prefab:
       propertyPath: interval
       value: .0500000007
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: cef75c0d193ec28428c870d0623e73fa, type: 2}
+      propertyPath: vnc_ip
+      value: 192.168.1.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: cef75c0d193ec28428c870d0623e73fa, type: 2}
+      propertyPath: vnc_port
+      value: 5902
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cef75c0d193ec28428c870d0623e73fa, type: 2}
   m_RootGameObject: {fileID: 1109757875}
@@ -1276,7 +1284,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: f83f7915f1489024e963834c79b71ef0, type: 2}
       propertyPath: windowtype_hidden
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: f83f7915f1489024e963834c79b71ef0, type: 2}
       propertyPath: x86

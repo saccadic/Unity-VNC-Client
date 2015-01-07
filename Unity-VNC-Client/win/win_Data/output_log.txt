@@ -17,7 +17,7 @@ Platform assembly: G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\win\win_Data\Mana
 Loading G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\win\win_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\win\win_Data\Managed\websocket-sharp.dll (this message is harmless)
 Loading G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\win\win_Data\Managed\websocket-sharp.dll into Unity Child Domain
-- Completed reload, in  0.114 seconds
+- Completed reload, in  0.039 seconds
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1280x800 60Hz; virtual: 2960x1050 at 0,0
@@ -73,195 +73,171 @@ vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\
  
 (Filename: G Line: 0)
 
-Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+hit:vncclient2
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:LogWarning(Object, Object)
-UnityEngine.Transform:set_parent(Transform) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineTransform.cs:119)
-OVRUGUI:ComponentComposition(GameObject) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:285)
-OVRUGUI:UIObjectManager(GameObject, String, Single, String, Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:246)
-OVRUGUI:InitUIComponents() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:190)
-OVRUGUI:UpdateGUI() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:120)
-OVRMainMenu:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRMainMenu.cs:412)
+UnityEngine.Debug:Log(Object)
+pointer:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\pointer.cs:26)
  
-(Filename: C Line: 0)
-
-Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:LogWarning(Object, Object)
-UnityEngine.Transform:set_parent(Transform) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineTransform.cs:119)
-OVRUGUI:UIObjectManager(GameObject, String, Single, String, Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:248)
-OVRUGUI:InitUIComponents() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:190)
-OVRUGUI:UpdateGUI() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:120)
-OVRMainMenu:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRMainMenu.cs:412)
- 
-(Filename: C Line: 0)
-
-Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:LogWarning(Object, Object)
-UnityEngine.Transform:set_parent(Transform) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineTransform.cs:119)
-OVRUGUI:ComponentComposition(GameObject) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:285)
-OVRUGUI:UIObjectManager(GameObject, String, Single, String, Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:246)
-OVRUGUI:InitUIComponents() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:196)
-OVRUGUI:UpdateGUI() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:120)
-OVRMainMenu:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRMainMenu.cs:412)
- 
-(Filename: C Line: 0)
-
-Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:LogWarning(Object, Object)
-UnityEngine.Transform:set_parent(Transform) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineTransform.cs:119)
-OVRUGUI:UIObjectManager(GameObject, String, Single, String, Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:248)
-OVRUGUI:InitUIComponents() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:196)
-OVRUGUI:UpdateGUI() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:120)
-OVRMainMenu:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRMainMenu.cs:412)
- 
-(Filename: C Line: 0)
-
-Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:LogWarning(Object, Object)
-UnityEngine.Transform:set_parent(Transform) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineTransform.cs:119)
-OVRUGUI:ComponentComposition(GameObject) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:285)
-OVRUGUI:UIObjectManager(GameObject, String, Single, String, Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:246)
-OVRUGUI:InitUIComponents() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:202)
-OVRUGUI:UpdateGUI() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:120)
-OVRMainMenu:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRMainMenu.cs:412)
- 
-(Filename: C Line: 0)
-
-Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:LogWarning(Object, Object)
-UnityEngine.Transform:set_parent(Transform) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineTransform.cs:119)
-OVRUGUI:UIObjectManager(GameObject, String, Single, String, Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:248)
-OVRUGUI:InitUIComponents() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:202)
-OVRUGUI:UpdateGUI() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:120)
-OVRMainMenu:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRMainMenu.cs:412)
- 
-(Filename: C Line: 0)
-
-Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:LogWarning(Object, Object)
-UnityEngine.Transform:set_parent(Transform) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineTransform.cs:119)
-OVRUGUI:ComponentComposition(GameObject) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:285)
-OVRUGUI:UIObjectManager(GameObject, String, Single, String, Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:246)
-OVRUGUI:InitUIComponents() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:208)
-OVRUGUI:UpdateGUI() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:120)
-OVRMainMenu:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRMainMenu.cs:412)
- 
-(Filename: C Line: 0)
-
-Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:LogWarning(Object, Object)
-UnityEngine.Transform:set_parent(Transform) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineTransform.cs:119)
-OVRUGUI:UIObjectManager(GameObject, String, Single, String, Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:248)
-OVRUGUI:InitUIComponents() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:208)
-OVRUGUI:UpdateGUI() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:120)
-OVRMainMenu:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRMainMenu.cs:412)
- 
-(Filename: C Line: 0)
-
-Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:LogWarning(Object, Object)
-UnityEngine.Transform:set_parent(Transform) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineTransform.cs:119)
-OVRUGUI:ComponentComposition(GameObject) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:285)
-OVRUGUI:UIObjectManager(GameObject, String, Single, String, Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:246)
-OVRUGUI:InitUIComponents() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:216)
-OVRUGUI:UpdateGUI() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:120)
-OVRMainMenu:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRMainMenu.cs:412)
- 
-(Filename: C Line: 0)
-
-Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:LogWarning(Object, Object)
-UnityEngine.Transform:set_parent(Transform) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineTransform.cs:119)
-OVRUGUI:UIObjectManager(GameObject, String, Single, String, Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:248)
-OVRUGUI:InitUIComponents() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:216)
-OVRUGUI:UpdateGUI() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:120)
-OVRMainMenu:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRMainMenu.cs:412)
- 
-(Filename: C Line: 0)
-
-Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:LogWarning(Object, Object)
-UnityEngine.Transform:set_parent(Transform) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineTransform.cs:119)
-OVRUGUI:ComponentComposition(GameObject) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:285)
-OVRUGUI:UIObjectManager(GameObject, String, Single, String, Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:246)
-OVRUGUI:InitUIComponents() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:222)
-OVRUGUI:UpdateGUI() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:120)
-OVRMainMenu:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRMainMenu.cs:412)
- 
-(Filename: C Line: 0)
-
-Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:LogWarning(Object, Object)
-UnityEngine.Transform:set_parent(Transform) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineTransform.cs:119)
-OVRUGUI:UIObjectManager(GameObject, String, Single, String, Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:248)
-OVRUGUI:InitUIComponents() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:222)
-OVRUGUI:UpdateGUI() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:120)
-OVRMainMenu:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRMainMenu.cs:412)
- 
-(Filename: C Line: 0)
-
-Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:LogWarning(Object, Object)
-UnityEngine.Transform:set_parent(Transform) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineTransform.cs:119)
-OVRUGUI:ComponentComposition(GameObject) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:285)
-OVRUGUI:UIObjectManager(GameObject, String, Single, String, Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:246)
-OVRUGUI:InitUIComponents() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:229)
-OVRUGUI:UpdateGUI() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:120)
-OVRMainMenu:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRMainMenu.cs:412)
- 
-(Filename: C Line: 0)
-
-Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:LogWarning(Object, Object)
-UnityEngine.Transform:set_parent(Transform) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineTransform.cs:119)
-OVRUGUI:UIObjectManager(GameObject, String, Single, String, Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:248)
-OVRUGUI:InitUIComponents() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:229)
-OVRUGUI:UpdateGUI() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:120)
-OVRMainMenu:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRMainMenu.cs:412)
- 
-(Filename: C Line: 0)
-
-Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:LogWarning(Object, Object)
-UnityEngine.Transform:set_parent(Transform) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineTransform.cs:119)
-OVRUGUI:ComponentComposition(GameObject) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:285)
-OVRUGUI:UIObjectManager(GameObject, String, Single, String, Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:246)
-OVRUGUI:InitUIComponents() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:235)
-OVRUGUI:UpdateGUI() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:120)
-OVRMainMenu:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRMainMenu.cs:412)
- 
-(Filename: C Line: 0)
-
-Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:LogWarning(Object, Object)
-UnityEngine.Transform:set_parent(Transform) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineTransform.cs:119)
-OVRUGUI:UIObjectManager(GameObject, String, Single, String, Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:248)
-OVRUGUI:InitUIComponents() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:235)
-OVRUGUI:UpdateGUI() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRUGUI.cs:120)
-OVRMainMenu:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRMainMenu.cs:412)
- 
-(Filename: C Line: 0)
+(Filename: G Line: 0)
 
 key
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
 vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+hit:vncclient2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+pointer:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\pointer.cs:26)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+hit:vncclient2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+pointer:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\pointer.cs:26)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+hit:vncclient2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+pointer:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\pointer.cs:26)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+hit:vncclient2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+pointer:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\pointer.cs:26)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+hit:vncclient2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+pointer:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\pointer.cs:26)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+hit:vncclient2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+pointer:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\pointer.cs:26)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+hit:vncclient2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+pointer:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\pointer.cs:26)
  
 (Filename: G Line: 0)
 
@@ -342,59 +318,20 @@ vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\
  
 (Filename: G Line: 0)
 
-key
+CubeGrid ON
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
-vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+UnityEngine.Debug:LogWarning(Object)
+OVRGridCube:UpdateCubeGrid() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRGridCube.cs:76)
+OVRGridCube:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRGridCube.cs:56)
  
 (Filename: G Line: 0)
 
-key
+Create CubeGrid
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
-vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
- 
-(Filename: G Line: 0)
-
-key
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
-vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
- 
-(Filename: G Line: 0)
-
-key
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
-vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
- 
-(Filename: G Line: 0)
-
-key
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
-vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
- 
-(Filename: G Line: 0)
-
-key
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
-vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
- 
-(Filename: G Line: 0)
-
-key
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
-vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+UnityEngine.Debug:LogWarning(Object)
+OVRGridCube:CreateCubeGrid() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRGridCube.cs:105)
+OVRGridCube:UpdateCubeGrid() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRGridCube.cs:80)
+OVRGridCube:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\OVR\Scripts\Util\OVRGridCube.cs:56)
  
 (Filename: G Line: 0)
 
@@ -493,10 +430,11 @@ vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\
  
 (Filename: G Line: 0)
 
-hit:Plane
+key
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-pointer:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\pointer.cs:26)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
  
 (Filename: G Line: 0)
 
@@ -508,25 +446,11 @@ vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\
  
 (Filename: G Line: 0)
 
-hit:vncclient2
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-pointer:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\pointer.cs:26)
- 
-(Filename: G Line: 0)
-
 key
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
 vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
- 
-(Filename: G Line: 0)
-
-hit:vncclient2
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-pointer:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\pointer.cs:26)
  
 (Filename: G Line: 0)
 
@@ -599,17 +523,18 @@ pointer:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\po
  
 (Filename: G Line: 0)
 
-HandleD3DDeviceLost
-  HandleD3DDeviceLost: needs reset, doing it
-FullResetD3DDevice
-ResetD3DDevice
-dev->Reset
-D3Dwindow device not lost anymore
 key
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
 vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+hit:vncclient2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+pointer:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\pointer.cs:26)
  
 (Filename: G Line: 0)
 
@@ -621,7 +546,97 @@ vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\
  
 (Filename: G Line: 0)
 
-hit:Plane
+hit:vncclient2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+pointer:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\pointer.cs:26)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+hit:vncclient2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+pointer:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\pointer.cs:26)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+hit:vncclient2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+pointer:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\pointer.cs:26)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+hit:vncclient2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+pointer:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\pointer.cs:26)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+hit:vncclient2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+pointer:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\pointer.cs:26)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+hit:vncclient2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+pointer:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\pointer.cs:26)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+hit:vncclient2
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 pointer:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\pointer.cs:26)
@@ -641,6 +656,306 @@ UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
 vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+hit:vncclient2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+pointer:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\pointer.cs:26)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+hit:vncclient2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+pointer:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\pointer.cs:26)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+hit:vncclient2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+pointer:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\pointer.cs:26)
+ 
+(Filename: G Line: 0)
+
+key
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+vncclient:KeyEvent(Int32) (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:204)
+vncclient:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\vncclient.cs:134)
+ 
+(Filename: G Line: 0)
+
+hit:vncclient2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+pointer:Update() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\Assets\Unode\pointer.cs:26)
  
 (Filename: G Line: 0)
 
@@ -655,6 +970,13 @@ Unode_v1_3:OnApplicationQuit() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\A
  
 (Filename: G Line: 0)
 
+1/7/2015 12:58:54 AM|Fatal|WebSocket.processException|WebSocketSharp.WebSocketException: The header part of a frame cannot be read from the data source.
+                             at WebSocketSharp.WebSocketFrame+<>c__DisplayClass7.<ReadAsync>b__6 (System.Byte[] header) [0x00000] in <filename unknown>:0 
+                             at WebSocketSharp.Ext+<>c__DisplayClass6.<ReadBytesAsync>b__5 (IAsyncResult ar) [0x00000] in <filename unknown>:0 
+OnError[vncclient2]An exception has occurred while receiving a message.
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
 OnClosed[vncclient2]
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
@@ -666,4 +988,3 @@ vncclient:OnApplicationQuit() (at G:\GitHub\Unity-VNC-Client\Unity-VNC-Client\As
  
 (Filename: G Line: 0)
 
-Waiting for finish
