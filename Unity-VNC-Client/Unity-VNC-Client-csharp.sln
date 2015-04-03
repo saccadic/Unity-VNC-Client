@@ -5,8 +5,6 @@ Project("{54E14149-4366-0F7F-4ADA-68A81E2E5F1E}") = "Unity-VNC-Client", "Assembl
 EndProject
 Project("{54E14149-4366-0F7F-4ADA-68A81E2E5F1E}") = "Unity-VNC-Client", "Assembly-CSharp-vs.csproj", "{523ED414-87E8-FD43-B953-95BE71C98BD7}"
 EndProject
-Project("{54E14149-4366-0F7F-4ADA-68A81E2E5F1E}") = "Unity-VNC-Client", "Assembly-CSharp-Editor-vs.csproj", "{A44BFBB9-3320-7283-CA8F-F17A674E3F71}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,15 +19,11 @@ Global
 		{523ED414-87E8-FD43-B953-95BE71C98BD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{523ED414-87E8-FD43-B953-95BE71C98BD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{523ED414-87E8-FD43-B953-95BE71C98BD7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A44BFBB9-3320-7283-CA8F-F17A674E3F71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A44BFBB9-3320-7283-CA8F-F17A674E3F71}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A44BFBB9-3320-7283-CA8F-F17A674E3F71}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A44BFBB9-3320-7283-CA8F-F17A674E3F71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																																																																																					GlobalSection(MonoDevelopProperties) = preSolution
+																																																																																																																													GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

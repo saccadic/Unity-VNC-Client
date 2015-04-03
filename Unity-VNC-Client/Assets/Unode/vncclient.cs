@@ -123,7 +123,7 @@ public class vncclient : MonoBehaviour {
 				rect = false;
 				img.LoadImage((byte[])Msgpack["data"]);
 				//img = loadtexture( (byte[])Msgpack["data"], (long)Msgpack["width"], (long)Msgpack["heigth"]);
-				gameObject.renderer.material.mainTexture = img;
+				gameObject.GetComponent<Renderer>().material.mainTexture = img;
 				if(updateFream == 1)
 					updateRequest();
 			}

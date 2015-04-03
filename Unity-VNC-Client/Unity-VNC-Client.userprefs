@@ -1,8 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\..\Users\K.Hotta\Desktop\umako\unity\Assets\select_scrolle.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Unode\vncclient.cs">
     <Files>
-      <File FileName="..\..\..\Users\K.Hotta\Desktop\umako\unity\Assets\select_scrolle.cs" Line="1" Column="1" />
+      <File FileName="Assets\Unode\vncclient.cs" Line="1" Column="1" />
+      <File FileName="Assets\Unode\test.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

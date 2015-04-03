@@ -13,7 +13,7 @@ public class SubDisplay : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(vnc.rect){
-			gameObject.renderer.material.mainTexture = vnc.img;
+			gameObject.GetComponent<Renderer>().material.mainTexture = vnc.img;
 		}
 	}
 }

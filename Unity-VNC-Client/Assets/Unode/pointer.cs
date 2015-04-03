@@ -16,7 +16,7 @@ public class pointer : MonoBehaviour {
 	public GameObject obj;
 
 	void Awake() {
-		Screen.showCursor = true;	
+		Cursor.visible = true;	
 		obj = GameObject.FindGameObjectWithTag ("pointer");
 	}
 
