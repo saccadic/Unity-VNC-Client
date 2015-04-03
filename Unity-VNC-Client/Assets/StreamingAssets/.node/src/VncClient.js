@@ -56,10 +56,11 @@ process.on('message', function(message) {
                         sendTOunity(client,message);
                     });
                     
-                    vnc.events.on('data',function(rect){                        
-                        var buf = png.ToBuffer(rect.width,rect.height,rect.data);
+                    vnc.events.on('data',function(rect){
                         //vnc.FramebufferUpdateRequest(0,0,0,vnc.info.width,vnc.info.height);
-                        //var buf = jpg.ToBuffer(rect.width,rect.height,50,rect.data);
+                        var buf = png.ToBuffer(rect.width,rect.height,rect.data);
+                        
+                        //var buf = jpg.ToBuffer(vnc.info.width,vnc.info.height,50,rect.data);
                         //vnc.FramebufferUpdateRequest(0,0,0,vnc.info.width,vnc.info.height);
                         var message = {
                             mode : 'rect',
@@ -67,7 +68,8 @@ process.on('message', function(message) {
                             heigth:rect.height,
                             data : buf
                         }
-                        //console.log(count+":",buf);
+                       // console.log(count+":",buf);
+                        
                         count++;
                         sendTOunity(client,message);
                     });

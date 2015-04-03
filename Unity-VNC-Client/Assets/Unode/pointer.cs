@@ -13,8 +13,11 @@ public class pointer : MonoBehaviour {
 	
 	private vncclient vnc; 
 
+	public GameObject obj;
+
 	void Awake() {
 		Screen.showCursor = true;	
+		obj = GameObject.FindGameObjectWithTag ("pointer");
 	}
 
 	void Update () {
@@ -42,6 +45,7 @@ public class pointer : MonoBehaviour {
 			}
 		}
 		*/
+		obj.transform.position = new Vector3 (hit_pos.x,hit_pos.y,transform.position.z);
 	}
 
 	Vector3 resize(Transform obj,Vector3 hit,Vector3 src){

@@ -82,6 +82,7 @@ public class vncclient : MonoBehaviour {
 								vnc["width"] = (long)Msgpack["width"];
 								vnc["height"] = (long)Msgpack["height"];
 								point.setSize((float)(long)vnc["width"],(float)(long)vnc["height"]);
+								img = new Texture2D((int)(long)vnc["width"], (int)(long)vnc["height"]);
 								connected = true;
 								SetUpdateFream();
 								break;
@@ -120,7 +121,8 @@ public class vncclient : MonoBehaviour {
 			if(rect){
 				//				Debug.Log("Update");
 				rect = false;
-				img = loadtexture( (byte[])Msgpack["data"], (long)Msgpack["width"], (long)Msgpack["heigth"]);
+				img.LoadImage((byte[])Msgpack["data"]);
+				//img = loadtexture( (byte[])Msgpack["data"], (long)Msgpack["width"], (long)Msgpack["heigth"]);
 				gameObject.renderer.material.mainTexture = img;
 				if(updateFream == 1)
 					updateRequest();
@@ -145,14 +147,15 @@ public class vncclient : MonoBehaviour {
 
 				if(updateFream == 1){
 					//Debug.Log("update");
+					//updateRequest();
 					if (Input.GetMouseButton (0)) {
 						PointerEvent(0);
-					}
-					if (Input.GetMouseButton (1)) {
+					}else if (Input.GetMouseButton (1)) {
 						PointerEvent(1);
-					}
-					if (Input.GetMouseButton (2)) {
+					}else if (Input.GetMouseButton (2)) {
 						PointerEvent(2);
+					}else{
+						PointerEvent(-1);
 					}
 					if(Input.GetAxis("Mouse ScrollWheel") > 0){
 						PointerEvent(3);
@@ -162,13 +165,13 @@ public class vncclient : MonoBehaviour {
 						PointerEvent(4);
 						PointerEvent(-1);
 					}
-					if(!(Input.GetMouseButton(0) || Input.GetMouseButton(1) || Input.GetMouseButton(2)))
-						PointerEvent(-1);
-					/*
-					if((point.pos != tmp_pos) && !(Input.GetMouseButton(0) || Input.GetMouseButton(1) || Input.GetMouseButton(2))){
-						tmp_pos = point.pos;
-						PointerEvent(-1);
-					}*/
+					//if(!(Input.GetMouseButton(0) || Input.GetMouseButton(1) || Input.GetMouseButton(2)))
+						
+
+					//if((point.pos != tmp_pos) && !(Input.GetMouseButton(0) || Input.GetMouseButton(1) || Input.GetMouseButton(2))){
+					//	tmp_pos = point.pos;
+					//	PointerEvent(-1);
+					//}
 				}
 			}
 			yield return new WaitForSeconds (interval);

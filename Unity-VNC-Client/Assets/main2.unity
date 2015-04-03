@@ -382,6 +382,50 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+--- !u!1001 &941670850
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 436902, guid: 8839fd4eaad539049b55566b87c5cc5d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 436902, guid: 8839fd4eaad539049b55566b87c5cc5d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 436902, guid: 8839fd4eaad539049b55566b87c5cc5d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 436902, guid: 8839fd4eaad539049b55566b87c5cc5d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 436902, guid: 8839fd4eaad539049b55566b87c5cc5d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 436902, guid: 8839fd4eaad539049b55566b87c5cc5d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 436902, guid: 8839fd4eaad539049b55566b87c5cc5d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 436902, guid: 8839fd4eaad539049b55566b87c5cc5d, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 8839fd4eaad539049b55566b87c5cc5d, type: 2}
+  m_RootGameObject: {fileID: 2049091406}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &1041878489
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,7 +623,7 @@ MonoBehaviour:
   adress: ws://127.0.0.1:8080/
   IsNodeJS: 0
   program_name: node.exe
-  windowtype_hidden: 0
+  windowtype_hidden: 1
   x86: 0
   nodejs_path: 
   Script_path: 
@@ -636,15 +680,15 @@ MonoBehaviour:
   ws_adress: ws://127.0.0.1
   ws_port: 9090
   ws_path: 
-  vnc_ip: 192.168.1.11
-  vnc_port: 5902
+  vnc_ip: 192.168.1.2
+  vnc_port: 5900
   password: savant
   img: {fileID: 0}
   rect: 0
   connected: 0
   timer: 0
   updateFream: -1
-  interval: .0500000007
+  interval: .00999999978
 --- !u!114 &1109757877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -764,6 +808,10 @@ Prefab:
     - target: {fileID: 11400000, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
       propertyPath: QuitKey
       value: 292
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
@@ -1228,15 +1276,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: cef75c0d193ec28428c870d0623e73fa, type: 2}
       propertyPath: interval
-      value: .0500000007
+      value: .00999999978
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: cef75c0d193ec28428c870d0623e73fa, type: 2}
       propertyPath: vnc_ip
-      value: 192.168.1.11
+      value: 192.168.1.2
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: cef75c0d193ec28428c870d0623e73fa, type: 2}
       propertyPath: vnc_port
-      value: 5902
+      value: 5900
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: cef75c0d193ec28428c870d0623e73fa, type: 2}
+      propertyPath: ws_adress
+      value: ws://127.0.0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: cef75c0d193ec28428c870d0623e73fa, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cef75c0d193ec28428c870d0623e73fa, type: 2}
@@ -1283,15 +1339,73 @@ Prefab:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: f83f7915f1489024e963834c79b71ef0, type: 2}
-      propertyPath: windowtype_hidden
+      propertyPath: x86
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: f83f7915f1489024e963834c79b71ef0, type: 2}
-      propertyPath: x86
-      value: 0
+      propertyPath: windowtype_hidden
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f83f7915f1489024e963834c79b71ef0, type: 2}
   m_RootGameObject: {fileID: 1105925338}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &2049091406
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 136902, guid: 8839fd4eaad539049b55566b87c5cc5d, type: 2}
+  m_PrefabInternal: {fileID: 941670850}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2049091410}
+  - 33: {fileID: 2049091409}
+  - 23: {fileID: 2049091407}
+  m_Layer: 0
+  m_Name: pointer
+  m_TagString: pointer
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &2049091407
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2336902, guid: 8839fd4eaad539049b55566b87c5cc5d,
+    type: 2}
+  m_PrefabInternal: {fileID: 941670850}
+  m_GameObject: {fileID: 2049091406}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: b291a505ff830a44abb14c6a8f3837fa, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &2049091409
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3336902, guid: 8839fd4eaad539049b55566b87c5cc5d,
+    type: 2}
+  m_PrefabInternal: {fileID: 941670850}
+  m_GameObject: {fileID: 2049091406}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &2049091410
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 436902, guid: 8839fd4eaad539049b55566b87c5cc5d, type: 2}
+  m_PrefabInternal: {fileID: 941670850}
+  m_GameObject: {fileID: 2049091406}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: .317690372, y: .317690492, z: .317690492}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
